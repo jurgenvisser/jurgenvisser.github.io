@@ -182,6 +182,10 @@ table {
   border: 2px solid #F19F6B;
 }
 
+.copyright-text-color {
+  color: #8080802a;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }

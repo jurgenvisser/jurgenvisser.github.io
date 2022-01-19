@@ -12,7 +12,7 @@
 </head>
     <body>
 
-        <div class="custom-background vh-100 d-flex flex-column">
+        <div class="custom-background vh-100 d-flex flex-column" id="section-home">
             
             <div class="bg-navbar">
                 <header>
@@ -25,34 +25,34 @@
                             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
                                 <ul class="navbar-nav fs-4 gap-2">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                                        <a href="#section-home" class="nav-link active" aria-current="page">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link" aria-current="page">Huidige projecten</a>
+                                        <a href="#section-current" class="nav-link" aria-current="page">Huidige projecten</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link" aria-current="page">Talen en ervaring</a>
+                                        <a href="#section-languages" class="nav-link" aria-current="page">Talen en ervaring</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link" aria-current="page">Contact me</a>
+                                        <a href="#section-contact" class="nav-link" aria-current="page">Contact me</a>
                                     </li>
                                     <!-- ? Misschien socials in een dropdown? Not sure yet... -->
-                                    <!-- <li class="nav-item dropdown">
+                                    <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                          Socials
                                         </a>
                                         <ul class="dropdown-menu navbar-light bg-dark" aria-labelledby="navbarDropdown">
                                             <li>
-                                            <a class="dropdown-item text-white" href="https://github.com/jurgenvisser">GitHub</a>
+                                                <a class="dropdown-item text-white" href="https://github.com/jurgenvisser">GitHub</a>
                                             </li>
                                             <li>
-                                            <a class="dropdown-item text-white" href="https://github.com/jurgenvisser">LinkedIn</a>
+                                                <a class="dropdown-item text-white" href="https://www.linkedin.com/in/jurgen-visser-62765115b/">Linkedin</a>
                                             </li>
                                             <li>
-                                            <a class="dropdown-item text-white" href="mailto:jurgenbv@gmail.com">E-mail</a>
+                                                <a class="dropdown-item text-white" href="mailto:jurgenbv@gmail.com">E-mail</a>
                                             </li>
                                         </ul>
-                                    </li> -->
+                                    </li>
                                 </ul>
                                 <ul class="d-flex gap-2 justify-content-end"> <!-- TODO: blendmode darken voor knoppen regelen. zie _components voor idee -->
                                     <li>
@@ -61,7 +61,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/jurgenvisser">
+                                        <a href="https://www.linkedin.com/in/jurgen-visser-62765115b/">
                                             <div class="p-1 rounded-circle d-flex justify-content-center" id="linkedin"><img class="btn-social" src="img/linkedin-64.png" alt="GitHub"></div>
                                         </a>
                                     </li>
@@ -89,7 +89,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     </p>
                     <div class="my-4">
-                        <a class="btn-blue text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold" href="#">LEES MEER</a>
+                        <a class="btn-blue text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold" href="#section-current">LEES MEER</a>
                     </div>
                 </div>
             </section>
@@ -97,7 +97,7 @@
         </div>
 
         <main>
-            <section class="current spacer-bottom">
+            <section class="current spacer-bottom" id="section-current">
                 <div class="container">
                     <h1 class="fs-2 fw-bold title-color-custom text-center p-5 text-uppercase">Huidige projecten</h1>
                     <div class="row"> <!-- ! Zorgen voor responsiveness als er meer cards worden toegevoegd  -->
@@ -126,7 +126,7 @@
                                             <br />
                                             Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                                         </p>
-                                        <!-- <a href="#" class="btn btn-primary disabled mt-3">Go somewhere</a> --> <!-- ? misschien voor later. Tip Xander: nesting -->a
+                                        <!-- <a href="#" class="btn btn-primary disabled mt-3">Go somewhere</a> --> <!-- ? misschien voor later. Tip Xander: nesting -->
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@
                 </div>
             </section>
 
-            <section class="languages spacer-bottom">
+            <section class="languages spacer-bottom" id="section-languages">
                 <div class="container">
                     <hr class="m-0">
                     <h1 class="fs-2 fw-bold title-color-custom text-center pt-5 pb-3 text-uppercase">Talen en ervaring</h1>
@@ -201,55 +201,90 @@
                         <!-- TODO: card footer met expand button -->
                 <!-- TODO: more button -->
             </section>
-    
-            <section class="contact vh-100 bg-contact">
-                <div class="container">
-                    <h1 class="fs-2 fw-bold text-white text-center p-5 text-uppercase">Contact me</h1>
 
-                    <div class="container text-white col-8 p-0">
-                        <form action="mailto:jurgenbv@gmail.com"> <!-- ! later email van webserver toevoegen-->
+            <div class="d-flex vh-100 flex-column">
+                <section class="contact flex-1 bg-contact" id="section-contact">
+                    <div class="container">
+                        <h1 class="fs-2 fw-bold text-white text-center p-5 text-uppercase">Contact me</h1>
 
-                            <div class="row fs-5 fw-bold text-uppercase mb-2">
-                                <div class="col bg-hover-blue p-2 me-1 rounded-top-start">
-                                    <label for="name_old">Naam:</label>
-                                    <input type="text" name="name_old" id="name_old" placeholder="John Appleseed" class="ps-2 text-white w-75 bg-hover-blue border-none">
+                        <div class="container text-white col-8 p-0">
+                            <form action="mailto:jurgenbv@gmail.com"> <!-- ! later email van webserver toevoegen-->
+
+                                <div class="row fs-5 fw-bold text-uppercase mb-2">
+                                    <div class="col bg-hover-blue p-2 px-3 me-1 rounded-top-start">
+                                        <label for="name_old">Naam:</label>
+                                        <input type="text" name="name_old" id="name_old" placeholder="John Appleseed" class="ps-2 text-white w-75 bg-hover-blue border-none">
+                                    </div>
+                                    <div class="col bg-hover-blue p-2 px-3 ms-1 rounded-top-end">
+                                        <label for="email_old">E-mail:</label>
+                                        <input type="email" name="email_old" id="email_old" placeholder="j.appleseed@gmail.com" class="ps-2 text-white w-75 bg-hover-blue border-none">
+                                    </div>
                                 </div>
-                                <div class="col bg-hover-blue p-2 ms-1 rounded-top-end">
-                                    <label for="email_old">E-mail:</label>
-                                    <input type="email" name="email_old" id="email_old" placeholder="j.appleseed@gmail.com" class="ps-2 text-white w-75 bg-hover-blue border-none">
-                                </div>
-                            </div>
 
-                            <div class="row fs-5 fw-bold text-uppercase mb-3 bg-primary-blue p-2 rounded-bottom">
-                                <div class="col-12 mb-2 p-0">
-                                    <label for="message">Bericht:</label>
+                                <div class="row fs-5 fw-bold text-uppercase mb-3 bg-primary-blue p-3 rounded-bottom">
+                                    <div class="col-12 mb-3 p-0">
+                                        <label for="message" class="">Bericht:</label>
+                                    </div>
+                                    <div class="col-12 p-0">
+                                        <textarea class="bg-primary-blue border-none text-white w-100 p-0" name="message" id="message" cols="30" rows="10" placeholder="Typ hier uw bericht..."></textarea>
+                                    </div>
                                 </div>
-                                <div class="col-12 p-0">  
-                                    <textarea class="bg-primary-blue border-none text-white w-100 px-2" name="message" id="message" cols="30" rows="10" placeholder="Typ hier uw bericht..."></textarea>
+
+                                <div class="row d-flex justify-content-end">
+                                    <!-- ? label voor enter -->
+                                    <button type="submit" class="w-auto bg-sec-orange text-white text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold border-sec-orange">Verzenden</button>
                                 </div>
-                            </div>
 
-                            <div class="row">
-                                <button type="submit" class="w-auto bg-sec-orange text-white text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold border-sec-orange">Verzenden</button>
-                            </div>
+                            </form>
+                        </div>
 
-                        </form>
                     </div>
+                    <!-- TODO: Fixed position button to top of page -->
+                        <!-- ? misschien gebruik maken van ::before -->
+                </section>
 
-                </div>
-                <!-- TODO: Fixed position button to top of page -->
-                    <!-- ? misschien gebruik maken van ::before -->
-            </section>
+                <footer>
+                    <nav class="navbar navbar-expand-lg bg-contact navbar-dark">
+                        <div class="container">
+
+                            <p href="https://www.jurgenbv.nl/" class="copyright-text-color text-decoration-none fs-3 fw-bold">Jurgen Visser - © 2022</p>
+                            <div class="d-flex justify-content-between" id="navbarSupportedContent2">
+                                <ul class="navbar-nav fs-4 gap-2">
+                                    <li class="nav-item">
+                                        <a href="#section-home" class="nav-link" aria-current="page">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#section-current" class="nav-link" aria-current="page">Huidige projecten</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#section-languages" class="nav-link" aria-current="page">Talen en ervaring</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#section-contact" class="nav-link active" aria-current="page">Contact me</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="navbar-nav fs-4 gap-2">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-decoration-none disabled" href="https://github.com/jurgenvisser">GitHub</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-decoration-none disabled" href="https://www.linkedin.com/in/jurgen-visser-62765115b/">Linkedin</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-decoration-none disabled" href="mailto:jurgenbv@gmail.com">E-mail</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </nav>
+                </footer>
+
+            </div>
+
         </main>
-
-        <footer>
-            <nav>
-                <!-- * footer nav hier -->
-                <!-- TODO: naam en copyright -->
-                <!-- TODO: nav links -->
-            </nav>
-        </footer>
-
 
     </body>
 </html>
