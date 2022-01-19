@@ -205,58 +205,40 @@
             <section class="contact vh-100 bg-contact">
                 <div class="container">
                     <h1 class="fs-2 fw-bold text-white text-center p-5 text-uppercase">Contact me</h1>
+
                     <div class="container text-white col-8 p-0">
-                        <div class="row">
-                            <div class="col-12 shadow rounded">
-                                <div class="row">
-                                    <div class="col mb-3">
-                                        <label for="validationCustom01" class="">First name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col mb-3 bg-primary-blue">
-                                        <label for="validationCustom02" class="">Last name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
+                        <form action="mailto:jurgenbv@gmail.com"> <!-- ! later email van webserver toevoegen-->
+
+                            <div class="row fs-5 fw-bold text-uppercase mb-2">
+                                <div class="col bg-hover-blue p-2 me-1 rounded-top-start">
+                                    <label for="name_old">Naam:</label>
+                                    <input type="text" name="name_old" id="name_old" placeholder="John Appleseed" class="ps-2 text-white w-75 bg-hover-blue border-none">
+                                </div>
+                                <div class="col bg-hover-blue p-2 ms-1 rounded-top-end">
+                                    <label for="email_old">E-mail:</label>
+                                    <input type="email" name="email_old" id="email_old" placeholder="j.appleseed@gmail.com" class="ps-2 text-white w-75 bg-hover-blue border-none">
                                 </div>
                             </div>
-                        </div>
-                        <form action="mailto:jurgenbv@gmail.com">
 
-                            <!-- <div class="row">
-                                <div class="col"> -->
-                                    <div class="row fs-4 fw-bold text-uppercase mb-3">
-                                        <div class="col bg-hover-blue p-2 rounded-top-start">
-                                            <label for="name">Naam:</label>
-                                            <input type="text" name="name" id="name" class="ps-2 text-white w-auto bg-hover-blue border-none">
-                                        </div>
-                                        <div class="col bg-hover-blue p-2 rounded-top-end">
-                                            <label for="email">E-mail:</label>
-                                            <input type="email" name="email" id="email" class="ps-2 text-white w-auto bg-hover-blue border-none"> <br />
-                                        </div>
-                                    </div>
-                                <!-- </div>
-                            </div> -->
-
-                            <div class="row fs-4 fw-bold text-uppercase mb-3 bg-primary-blue p-2 rounded-bottom">
+                            <div class="row fs-5 fw-bold text-uppercase mb-3 bg-primary-blue p-2 rounded-bottom">
                                 <div class="col-12 mb-2 p-0">
                                     <label for="message">Bericht:</label>
                                 </div>
                                 <div class="col-12 p-0">  
-                                    <textarea class="bg-primary-blue border-none text-white w-100" name="message" id="message" cols="30" rows="10"></textarea>
+                                    <textarea class="bg-primary-blue border-none text-white w-100 px-2" name="message" id="message" cols="30" rows="10" placeholder="Typ hier uw bericht..."></textarea>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <button type="submit" class="w-auto bg-sec-orange text-white text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold border-sec-orange">Verzenden</button>
                             </div>
+
                         </form>
                     </div>
+
                 </div>
-                <!-- * Contact me page -->
                 <!-- TODO: Fixed position button to top of page -->
                     <!-- ? misschien gebruik maken van ::before -->
-                <!-- TODO: contact body background -->
-                    <!-- TODO: contact form -->
-                    <!-- TODO: form submit button -->
             </section>
         </main>
 
