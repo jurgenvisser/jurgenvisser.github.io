@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-color: #073358;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: unset;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.background-custom {
+    background-blend-mode: darken;
+    background-color: rgba(243, 168, 111, 0.5);
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.socials {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 140px;
+    width: 155px;
+}
+    
+.round {
+    align-items: center;
+    border-radius: 30px;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    width: 45px;
+}
+
+#github {background-color: #ED6A5E;}
+#github:hover {background-color: #CE5B51;}
+#linkedin {background-color: #F3BE59;}
+#linkedin:hover {background-color: #D6A74E;}
+#mailto {background-color: #61C454;}
+#mailto:hover {background-color: #4FA044;}
+
+#logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-customcss {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 120px;
+}
+
+.nav-customcss > a {
+    padding: 20px;
+    font-size: 25px;
+}
+
+header {
+    align-items: center;
+    background-color: rgba(7, 51, 88, 0.5);
+    color: #ffffff;
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.hero {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    flex: 1;
+    padding-left: 8vw;
+}
+
+h1.hallo {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 62px;
+}
+
+.blue {color: #43afdb;}
+.orange {color: #f3a86f;}
+.hallo:hover > span.blue {color: #0396a7;}
+.hallo:hover > span.orange {color: #f26e23;}
+
+.intro {
+    font-size: 35px;
+    margin-bottom: 40px;
+    width: 674px;
+}
+
+.leesmeer {
+    background-color: #3285a7;
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 35px;
+    height: 80px;
+    padding: 10px 25px;
+    text-decoration: none;
+    width: 260px;
+}
+
+.leesmeer:hover {background-color: #073358;}
+
+main {
+    background-color: #f2feff;
+    color: #073358;
+} 
+
+.projecten {height: 100vh;}
+
+h1.center {
+    font-size: 45px;
+    padding-top: 60px;
+}
+
+.center {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: center;
+}
+
+.textbox {width: 40vw;}
+
+.textbox > h2 {
+    align-items: center;
+    background-color: #f19f6b;
+    border-radius: 5px;
+    color: #f2feff;
+    display: flex;
+    font-size: 30px;
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.textbox > p {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.ervaring {height: 100vh;}
+
+h3 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.row > p {
+    align-items: center;
+    background-color: #f19f6b;
+    border-radius: 3px;
+    color: #f2feff;
+    display: flex;
+    font-size: 25px;
+    height: 35px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    padding-right: 50px;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+footer {color: #f2feff;}
+.contact-page {height: 100vh;}
+.contact-page > .center {padding-top: 100px;}
+
+/* .contact_form {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 100px 21.65vw;
+}
+#row > p {
+    grid-area: 1fr 1fr;
+}
+
+#row {
+    background-color: #3285A7;
+    display: grid;
+    margin: 2.5px;
+}
+
+#row > p {
+    width: 25vw;
+}
+
+.message {
+    background-color: aqua;
+} */
+
+.item1 {grid-area: name; border-radius: 15px 0 0 0;}
+.item2 {grid-area: email; border-radius: 0 15px 0 0;}
+.item3 {grid-area: message; border-radius: 0 0 15px 15px;}
+
+.grid-container {
+    margin: 100px 21.65vw;
+    font-size: 35px;
+    font-weight: bold;
+    display: grid;
+    grid-template-areas: 
+    'name email'
+    'message message';
+    grid-gap: 10px;
+    background-color: none;
+}
+
+.grid-container > div {
+    padding: 0 25px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #3285a7;
+}
+
+::placeholder {
+    color: #f2feff;
+    opacity: .2;
+}
+
+.grid-container > div > input {
+    margin: 0 10px;
+    font-size: 25px;
+    font-weight: normal;
+    width: auto;
+    background-color: inherit;
+    color: #f2feff;
+}
+
+.grid-container > div.item3 {
+    box-sizing: border-box;
+    background-color: #43afdb;
+    padding: 10px 25px;
+    height: 424px;
+    align-items: unset;
+    display: block;
+}
+
+/********************TAG SELECTORS********************/ 
+/* These are the basic tags that are targetted but dan be overwritten by class of id selecors. */
+
+/********************CLASS SELECTORS********************/
+/* These are class selectors. There can be multiple elements with the same class. You can group elements that are going to behave in the same style.*/
+/* You can have multiple classes on one element. */
+
+/********************ID SELECTORS********************/
+/* These are id selectors. You can use a specific id on just ONE element. There can not me multiple of the same id's. */
+/* You can have just ONE id per element. Never multiple. */
+
+/********************SHORTCUTS********************/
+/* Ctrl + K + C comment out the section of code */
+/* Ctrl + K + U uncomment the code */
+/* Option + Z enables/disables line wrapping */
+/* Fn + Command + F2 to rename a variable inside a code block */

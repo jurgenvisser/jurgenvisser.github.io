@@ -1,0 +1,87 @@
+#github {background-color: #ED6A5E;}
+#github:hover {background-color: #CE5B51;}
+#linkedin {background-color: #F3BE59;}
+#linkedin:hover {background-color: #D6A74E;}
+#mailto {background-color: #61C454;}
+#mailto:hover {background-color: #4FA044;}
+
+// TODO: blendmode darken regelen voor socials
+// ? is dit misschien een idee?
+// .github {
+//     background-color: #ED6A5E;
+//     :hover {
+//         background-color: rgba(0, 0, 0, 0.5);
+//         background-blend-mode: screen;
+//     }
+// }
+// ? ----------------------
+
+.btn-social {
+    height: $btn-socials-size;
+    width: $btn-socials-size;
+}
+
+.title-text {
+    .blue {color: $primary-blue;}
+    .orange {color: $primary-orange;}
+}
+
+.title-text:hover {
+    .blue {color: $hover-blue;}
+    .orange {color: $hover-orange;}
+}
+
+.btn-blue {
+    background-color: $primary-blue;
+    color: $primary-text-color;
+}
+
+.btn-blue:hover {
+    background-color: $hover-blue;
+    color: $primary-text-color;
+}
+
+.bg-navbar {background-color: $navbar-color;}
+.title-bg-custom {background-color: $hover-blue;}
+.border-none {border: none;}
+.flex-1 {flex: 1;}
+.vh-50 {height: 50vh;}
+.bg-sec-orange {background-color: $secundairy-orange;}
+.bg-contact {background-color: $background-color;}
+.bg-primary-blue {background-color: $primary-blue;}
+.bg-hover-blue {background-color: $hover-blue;}
+.spacer-bottom {padding-bottom: 128px;}
+.fs-custom-title {font-size: 56px;}
+.rounded-top-start {border-top-left-radius: 5px;}
+.rounded-top-end {border-top-right-radius: 5px;}
+.border-sec-orange {border: 2px solid $secundairy-orange;}
+
+
+// %btn {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 200px;
+//     height: 50px;
+//     text-decoration: none;
+// }
+
+// .btn-primary {
+//     @extend %btn;
+//     background-color: $primary-color;
+//     color: $light-color;
+//     @include btn-text;
+//     &:hover {
+//         background-color: $dark-color;
+//     }
+// }
+
+// .btn-secundairy {
+//     @extend %btn;
+//     border: $dark-color 3px solid;
+//     color: $dark-color;
+//     @include btn-text;
+//     &:hover {
+//         background-color: $primary-color;
+//     }
+// }

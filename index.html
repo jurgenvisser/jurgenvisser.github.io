@@ -4,36 +4,270 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="sass/main.css">
     <title>jurgenbv.nl</title>
 </head>
-  <body>
-    <div class="background">
-      <header>
-        <div class="socials">
-          <a href="https://github.com/jurgenvisser">GitHub</a>
-          <a href="https://www.linkedin.com/in/jurgen-visser-62765115b/">LinkedIn</a>
-          <a href="mailto:jurgenbv@gmail.com">Email</a>
+    <body>
+
+        <div class="custom-background vh-100 d-flex flex-column">
+            
+            <div class="bg-navbar">
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container">
+                            <a href="https://www.jurgenbv.nl/" class="navbar-brand fs-3 fw-bold pe-5">jurgenbv.nl</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+                                <ul class="navbar-nav fs-4 gap-2">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" aria-current="page">Huidige projecten</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" aria-current="page">Talen en ervaring</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" aria-current="page">Contact me</a>
+                                    </li>
+                                    <!-- ? Misschien socials in een dropdown? Not sure yet... -->
+                                    <!-- <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                         Socials
+                                        </a>
+                                        <ul class="dropdown-menu navbar-light bg-dark" aria-labelledby="navbarDropdown">
+                                            <li>
+                                            <a class="dropdown-item text-white" href="https://github.com/jurgenvisser">GitHub</a>
+                                            </li>
+                                            <li>
+                                            <a class="dropdown-item text-white" href="https://github.com/jurgenvisser">LinkedIn</a>
+                                            </li>
+                                            <li>
+                                            <a class="dropdown-item text-white" href="mailto:jurgenbv@gmail.com">E-mail</a>
+                                            </li>
+                                        </ul>
+                                    </li> -->
+                                </ul>
+                                <ul class="d-flex gap-2 justify-content-end"> <!-- TODO: blendmode darken voor knoppen regelen. zie _components voor idee -->
+                                    <li>
+                                        <a href="https://github.com/jurgenvisser">
+                                            <div class="p-1 rounded-circle d-flex justify-content-center" id="github"><img class="btn-social" src="img/github-64.png" alt="GitHub"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/jurgenvisser">
+                                            <div class="p-1 rounded-circle d-flex justify-content-center" id="linkedin"><img class="btn-social" src="img/linkedin-64.png" alt="GitHub"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:jurgenbv@gmail.com">
+                                            <div class="p-1 rounded-circle d-flex justify-content-center" id="mailto"><img class="btn-social" src="img/mail-64.png" alt="e-mail"></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        
+            <section class="d-flex flex-1 align-items-center text-color-primary">
+                <div class="container">
+                    <h1 class="title-text col-8 fs-custom-title">
+                        HOI, IK BEN <span class="blue">JURGEN</span>! <br />
+                        IK BEN <span class="orange">(BINNENKORT)</span> EEN FULL-STACK DEVELOPER<span class="blue">.</span> <br />
+                        OP DEZE WEBSITE VIND JE MIJN WERK<span class="orange">.</span>
+                    </h1>
+                    <!-- ? TODO: een foto toevoegen van mijzelf? -->
+                    <p class="col-6 fs-4 py-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                    <div class="my-4">
+                        <a class="btn-blue text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold" href="#">LEES MEER</a>
+                    </div>
+                </div>
+            </section>
+            
         </div>
-        <h1 id="logo"> <a href="http://jurgenbv.nl">jurgenbv.nl</a></h1>
-      </header>
-      <div class="hero">
-        <section>
-          <h1 class="hallo"> 
-            HOI, IK BEN <span class="blue">JURGEN</span>! <br />
-            BEN <span class="orange">(BINNENKORT)</span> EEN FULL-STACK DEVELOPER<span class="blue">.</span> <br />
-            OP DEZE WEBSITE VIND JE MIJN WERK<span class="orange">.</span>
-          </h1>
-          <p class="intro">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          </p>
-          <a class="leesmeer" href="#">LEES MEER</a>
-        </section>
-      </div>
-    </div>
 
-    <main></main>
-    <footer></footer>
+        <main>
+            <section class="current spacer-bottom">
+                <div class="container">
+                    <h1 class="fs-2 fw-bold title-color-custom text-center p-5 text-uppercase">Huidige projecten</h1>
+                    <div class="row"> <!-- ! Zorgen voor responsiveness als er meer cards worden toegevoegd  -->
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title title-bg-custom text-white fs-4 fw-bold py-2 px-3 rounded text-uppercase">Huidig PHP project</h5>
+                                    <div class="m-3">
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <br />
+                                            <br />
+                                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                        </p>
+                                        <!-- <a href="#" class="btn btn-primary disabled mt-3">Go somewhere</a> --> <!-- ? misschien voor later. Tip Xander: nesting -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title title-bg-custom text-white fs-4 fw-bold py-2 px-3 rounded text-uppercase">Huidig HTML/CSS project</h5>
+                                    <div class="m-3">
+                                        <p class="card-text">
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. <br />
+                                            <br />
+                                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                        </p>
+                                        <!-- <a href="#" class="btn btn-primary disabled mt-3">Go somewhere</a> --> <!-- ? misschien voor later. Tip Xander: nesting -->a
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
 
-  </body>
+                </div>
+            </section>
+
+            <section class="languages spacer-bottom">
+                <div class="container">
+                    <hr class="m-0">
+                    <h1 class="fs-2 fw-bold title-color-custom text-center pt-5 pb-3 text-uppercase">Talen en ervaring</h1>
+                    <h3 class="fs-5 text-center pb-3">- bekend met het concept | + basiskennis | ++ redelijk kennisniveau | +++ goed mee bekend</h3>
+                    <div class="row fs-5">
+                        <div class="col-1"></div>
+                        <div class="col-5 d-grid gap-3">
+                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
+                                <h2>HTML</h2>
+                                <span>+++</span>
+                            </div>
+                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
+                                <h2>CSS</h2>
+                                <span>++</span>
+                            </div>
+                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
+                                <h2>PHP</h2>
+                                <span>+</span>
+                            </div>
+                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
+                                <h2>JavaScript</h2>
+                                <span>+</span>
+                            </div>
+                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
+                                <h2>Bootstrap</h2>
+                                <span>++</span>
+                            </div>
+                        </div>
+                        <div class="col-5 d-grid gap-3">
+                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
+                                <h2>C#</h2>
+                                <span>-</span>
+                            </div>
+                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
+                                <h2>JAVA</h2>
+                                <span>-</span>
+                            </div>
+                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
+                                <h2>SQL</h2>
+                                <span>-</span>
+                            </div>
+                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
+                                <h2>MY SQL</h2>
+                                <span>-</span>
+                            </div>
+                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
+                                <h2>JQUERY</h2>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="col-1"></div> <!-- ! deze is vgm niet nodig -->
+                    </div>
+                </div>
+                
+                <!-- * Talen en ervaring hier -->
+                <!-- TODO: filter knoppen maken. Laatste filter knop is een dropdown -->
+                    <!-- ! 12 cards maken die indvidueel aanroepbaar zijn -->
+                    <!-- TODO: card body -->
+                        <!-- TODO: card title -->
+                        <!-- TODO: card content -->
+                        <!-- TODO: card footer met expand button -->
+                <!-- TODO: more button -->
+            </section>
+    
+            <section class="contact vh-100 bg-contact">
+                <div class="container">
+                    <h1 class="fs-2 fw-bold text-white text-center p-5 text-uppercase">Contact me</h1>
+                    <div class="container text-white col-8 p-0">
+                        <div class="row">
+                            <div class="col-12 shadow rounded">
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <label for="validationCustom01" class="">First name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col mb-3 bg-primary-blue">
+                                        <label for="validationCustom02" class="">Last name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="mailto:jurgenbv@gmail.com">
+
+                            <!-- <div class="row">
+                                <div class="col"> -->
+                                    <div class="row fs-4 fw-bold text-uppercase mb-3">
+                                        <div class="col bg-hover-blue p-2 rounded-top-start">
+                                            <label for="name">Naam:</label>
+                                            <input type="text" name="name" id="name" class="ps-2 text-white w-auto bg-hover-blue border-none">
+                                        </div>
+                                        <div class="col bg-hover-blue p-2 rounded-top-end">
+                                            <label for="email">E-mail:</label>
+                                            <input type="email" name="email" id="email" class="ps-2 text-white w-auto bg-hover-blue border-none"> <br />
+                                        </div>
+                                    </div>
+                                <!-- </div>
+                            </div> -->
+
+                            <div class="row fs-4 fw-bold text-uppercase mb-3 bg-primary-blue p-2 rounded-bottom">
+                                <div class="col-12 mb-2 p-0">
+                                    <label for="message">Bericht:</label>
+                                </div>
+                                <div class="col-12 p-0">  
+                                    <textarea class="bg-primary-blue border-none text-white w-100" name="message" id="message" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button type="submit" class="w-auto bg-sec-orange text-white text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold border-sec-orange">Verzenden</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- * Contact me page -->
+                <!-- TODO: Fixed position button to top of page -->
+                    <!-- ? misschien gebruik maken van ::before -->
+                <!-- TODO: contact body background -->
+                    <!-- TODO: contact form -->
+                    <!-- TODO: form submit button -->
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <!-- * footer nav hier -->
+                <!-- TODO: naam en copyright -->
+                <!-- TODO: nav links -->
+            </nav>
+        </footer>
+
+
+    </body>
 </html>

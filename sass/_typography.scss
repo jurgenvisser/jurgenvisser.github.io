@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+// body {font-family: $roboto;} //! deze staat nu nog in main.scss maar moet hier naar toe...
+
+.title-text {
+    font-family: $bebas-neue;
+    font-size: 62px;
+}
+
+.title-color-custom {
+    color: $secundairy-text-color;
+}
+
+.text-color-primary {
+    color: $primary-text-color;
+}
+
+
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// @mixin title {
+//     font-family: $front-stack;
+//     font-size: 90px;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     color: $primary-color;
+// }
+
+// @mixin under-title {
+//     font-family: $front-stack;
+//     font-size: 60px;
+//     font-weight: 700;
+//     color: $secundairy-color;
+// }
+
+// @mixin paragraph-text {
+//     font-family: $front-stack;
+//     font-size: 25px;
+//     color: $dark-color;
+// }
+
+// @mixin btn-text {
+//     font-family: $front-stack;
+//     font-size: 20px;
+// }
