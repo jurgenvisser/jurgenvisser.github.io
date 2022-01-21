@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@500;700&family=Lexend:wght@400;700&family=Roboto:wght@400;700&display=swap');
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Barlow Condensed', sans-serif;
+// font-family: 'Lexend', sans-serif;
+// font-family: 'Roboto', sans-serif;
 
 // body {font-family: $roboto;} //! deze staat nu nog in main.scss maar moet hier naar toe...
 
 .title-text {
-    font-family: $bebas-neue;
+    // font-family: $bebas-neue;
+    font-family: $lexend;
+    font-weight: 700;
     font-size: 62px;
 }
 
@@ -15,6 +22,8 @@
 .text-color-primary {
     color: $primary-text-color;
 }
+
+
 
 
 // @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');

@@ -7,10 +7,21 @@
 @import "header";
 @import "components";
 
-body {font-family: $roboto;} //! deze moet naar _typography.scss maar er gaat iets fout met linken...
+body {font-family: $lexend;} //! deze moet naar _typography.scss maar er gaat iets fout met linken...
 
 body {background-color: $body-background-color;}
 
+.font-bebas {
+    font-family: $bebas-neue;
+}
+
+::placeholder {
+    color: $primary-text-color-dimmed;
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
 
 .custom-background {
     background-blend-mode: darken;
@@ -18,6 +29,22 @@ body {background-color: $body-background-color;}
     background-image: url('../img/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.languages-grid-container {
+    grid-template-columns: auto auto;
+}
+
+.languages-grid-item {
+    background-color: $secundairy-orange;
+    border-radius: 5px;
+    color: $primary-text-color;
+    display: flex;
+    font-weight: bold;
+    font-size: large;
+    justify-content: space-between;
+    padding: 1rem;
+    width: auto;
 }
 
 

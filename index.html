@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal" defer>ScrollReveal({ reset: true });</script>
+    <script src="js/main.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="sass/main.css">
     <title>jurgenbv.nl</title>
 </head>
@@ -18,27 +19,27 @@
                 <header>
                     <nav class="navbar navbar-expand-lg navbar-dark">
                         <div class="container">
-                            <a href="https://www.jurgenbv.nl/" class="navbar-brand fs-3 fw-bold pe-5">jurgenbv.nl</a>
+                            <a href="https://www.jurgenbv.nl/" class="reveal-navbar navbar-brand fs-3 py-0 fw-bold pe-5">jurgenbv.nl</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                                <ul class="navbar-nav fs-4 gap-2">
+                                <ul class="navbar-nav fs-5 gap-2">
                                     <li class="nav-item">
-                                        <a href="#section-home" class="nav-link active" aria-current="page">Home</a>
+                                        <a href="#section-home" class="reveal-navbar nav-link active" aria-project="page">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#section-current" class="nav-link" aria-current="page">Huidige projecten</a>
+                                        <a href="#section-project" class="reveal-navbar nav-link" aria-project="page">Projecten</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#section-languages" class="nav-link" aria-current="page">Talen en ervaring</a>
+                                        <a href="#section-languages" class="reveal-navbar nav-link" aria-project="page">Talen</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#section-contact" class="nav-link" aria-current="page">Contact me</a>
+                                        <a href="#section-contact" class="reveal-navbar nav-link" aria-project="page">Contact</a>
                                     </li>
                                     <!-- ? Misschien socials in een dropdown? Not sure yet... -->
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                          Socials
                                         </a>
                                         <ul class="dropdown-menu navbar-light bg-dark" aria-labelledby="navbarDropdown">
@@ -52,23 +53,17 @@
                                                 <a class="dropdown-item text-white" href="mailto:jurgenbv@gmail.com">E-mail</a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                 </ul>
-                                <ul class="d-flex gap-2 justify-content-end"> <!-- TODO: blendmode darken voor knoppen regelen. zie _components voor idee -->
+                                <ul class="d-flex gap-4 justify-content-end">
                                     <li>
-                                        <a href="https://github.com/jurgenvisser">
-                                            <div class="p-1 rounded-circle d-flex justify-content-center" id="github"><img class="btn-social" src="img/github-64.png" alt="GitHub"></div>
-                                        </a>
+                                        <a href="https://github.com/jurgenvisser" class="reveal-navbar p-3 d-flex" id="github"></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/jurgen-visser-62765115b/">
-                                            <div class="p-1 rounded-circle d-flex justify-content-center" id="linkedin"><img class="btn-social" src="img/linkedin-64.png" alt="GitHub"></div>
-                                        </a>
+                                        <a href="https://www.linkedin.com/in/jurgen-visser-62765115b/" class="reveal-navbar p-3 d-flex" id="linkedin"></a>
                                     </li>
                                     <li>
-                                        <a href="mailto:jurgenbv@gmail.com">
-                                            <div class="p-1 rounded-circle d-flex justify-content-center" id="mailto"><img class="btn-social" src="img/mail-64.png" alt="e-mail"></div>
-                                        </a>
+                                        <a href="mailto:jurgenbv@gmail.com" class="reveal-navbar p-3 d-flex" id="mailto"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -79,17 +74,17 @@
         
             <section class="d-flex flex-1 align-items-center text-color-primary">
                 <div class="container">
-                    <h1 class="title-text col-8 fs-custom-title">
+                    <h1 class="ScrollReveal title-text col-md-10 fs-1">
                         HOI, IK BEN <span class="blue">JURGEN</span>! <br />
-                        IK BEN <span class="orange">(BINNENKORT)</span> EEN FULL-STACK DEVELOPER<span class="blue">.</span> <br />
+                        IK BEN EEN <span class="orange">FULL-STACK</span> WEB-DEVELOPER<span class="blue">.</span> <br />
                         OP DEZE WEBSITE VIND JE MIJN WERK<span class="orange">.</span>
                     </h1>
                     <!-- ? TODO: een foto toevoegen van mijzelf? -->
-                    <p class="col-6 fs-4 py-4">
+                    <p class="ScrollReveal col-lg-6 col-md-8 fs-4 py-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     </p>
-                    <div class="my-4">
-                        <a class="btn-blue text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold" href="#section-current">LEES MEER</a>
+                    <div class="ScrollReveal my-4">
+                        <a class="btn-blue text-decoration-none rounded-pill px-4 py-2 fs-4" href="#section-project">LEES MEER</a>
                     </div>
                 </div>
             </section>
@@ -97,9 +92,9 @@
         </div>
 
         <main>
-            <section class="current spacer-bottom" id="section-current">
+            <section class="project spacer-bottom" id="section-project"> <!-- ? .ScrollReveal op alle sections? -->
                 <div class="container">
-                    <h1 class="fs-2 fw-bold title-color-custom text-center p-5 text-uppercase">Huidige projecten</h1>
+                    <h1 class="ScrollReveal fs-1 fw-bold title-color-custom text-center p-5 text-uppercase">Projecten</h1>
                     <div class="row"> <!-- ! Zorgen voor responsiveness als er meer cards worden toegevoegd  -->
                         <div class="col-6">
                             <div class="card">
@@ -140,77 +135,30 @@
             <section class="languages spacer-bottom" id="section-languages">
                 <div class="container">
                     <hr class="m-0">
-                    <h1 class="fs-2 fw-bold title-color-custom text-center pt-5 pb-3 text-uppercase">Talen en ervaring</h1>
-                    <h3 class="fs-5 text-center pb-3">- bekend met het concept | + basiskennis | ++ redelijk kennisniveau | +++ goed mee bekend</h3>
-                    <div class="row fs-5">
-                        <div class="col-1"></div>
-                        <div class="col-5 d-grid gap-3">
-                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
-                                <h2>HTML</h2>
-                                <span>+++</span>
-                            </div>
-                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
-                                <h2>CSS</h2>
-                                <span>++</span>
-                            </div>
-                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
-                                <h2>PHP</h2>
-                                <span>+</span>
-                            </div>
-                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
-                                <h2>JavaScript</h2>
-                                <span>+</span>
-                            </div>
-                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
-                                <h2>Bootstrap</h2>
-                                <span>++</span>
-                            </div>
+                    <h1 class="ScrollReveal fs-2 fw-bold title-color-custom text-center pt-5 pb-3 text-uppercase">Skills</h1>
+                    <h3 class="ScrollReveal fs-5 text-center pb-3">+ basiskennis | ++ redelijk kennisniveau | +++ goed mee bekend</h3>
+
+                    <div class="container d-flex justify-content-center p-0 mb-3">
+                        <div class="languages-grid-container col-10 d-grid gap-3 text-center"> <!-- TODO: maak hier gebruik van een array en maak gebruik van de join functie -->
+                            <div class="languages-grid-item">HTML<span>+++</span></div>
+                            <div class="languages-grid-item">CSS<span>++</span></div>
+                            <div class="languages-grid-item">PHP<span>+</span></div>
+                            <div class="languages-grid-item">JavaScript<span>+</span></div>
+                            <div class="languages-grid-item">Bootstrap 5<span>++</span></div>
                         </div>
-                        <div class="col-5 d-grid gap-3">
-                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
-                                <h2>C#</h2>
-                                <span>-</span>
-                            </div>
-                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
-                                <h2>JAVA</h2>
-                                <span>-</span>
-                            </div>
-                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
-                                <h2>SQL</h2>
-                                <span>-</span>
-                            </div>
-                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
-                                <h2>MY SQL</h2>
-                                <span>-</span>
-                            </div>
-                            <div class="d-flex justify-content-between bg-sec-orange text-white fw-bold p-3 rounded">
-                                <h2>JQUERY</h2>
-                                <span>-</span>
-                            </div>
-                        </div>
-                        <div class="col-1"></div> <!-- ! deze is vgm niet nodig -->
                     </div>
                 </div>
-                
-                <!-- * Talen en ervaring hier -->
-                <!-- TODO: filter knoppen maken. Laatste filter knop is een dropdown -->
-                    <!-- ! 12 cards maken die indvidueel aanroepbaar zijn -->
-                    <!-- TODO: card body -->
-                        <!-- TODO: card title -->
-                        <!-- TODO: card content -->
-                        <!-- TODO: card footer met expand button -->
-                <!-- TODO: more button -->
             </section>
 
-            <div class="d-flex vh-100 flex-column">
-                <section class="contact flex-1 bg-contact" id="section-contact">
+            <div class="d-flex flex-column">
+                <section class="contact spacer-bottom bg-contact" id="section-contact">
                     <div class="container">
-                        <h1 class="fs-2 fw-bold text-white text-center p-5 text-uppercase">Contact me</h1>
+                        <h1 class="ScrollReveal fs-2 fw-bold text-white text-center p-5 text-uppercase">Contact</h1>
 
-                        <div class="container text-white col-8 p-0">
+                        <div class="container text-white col-lg-8 col-md-10 p-0">
                             <form action="mailto:jurgenbv@gmail.com"> <!-- ! later email van webserver toevoegen-->
 
-                                <div class="row fs-5 fw-bold text-uppercase mb-2">
+                                <div class="ScrollReveal row fs-5 fw-bold text-uppercase mb-2">
                                     <div class="col bg-hover-blue p-2 px-3 me-1 rounded-top-start">
                                         <label for="name_old">Naam:</label>
                                         <input type="text" name="name_old" id="name_old" placeholder="John Appleseed" class="ps-2 text-white w-75 bg-hover-blue border-none">
@@ -221,7 +169,7 @@
                                     </div>
                                 </div>
 
-                                <div class="row fs-5 fw-bold text-uppercase mb-3 bg-primary-blue p-3 rounded-bottom">
+                                <div class="ScrollReveal row fs-5 fw-bold text-uppercase mb-3 bg-primary-blue p-3 rounded-bottom">
                                     <div class="col-12 mb-3 p-0">
                                         <label for="message" class="">Bericht:</label>
                                     </div>
@@ -230,7 +178,7 @@
                                     </div>
                                 </div>
 
-                                <div class="row d-flex justify-content-end">
+                                <div class="ScrollReveal row d-flex justify-content-end">
                                     <!-- ? label voor enter -->
                                     <button type="submit" class="w-auto bg-sec-orange text-white text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold border-sec-orange">Verzenden</button>
                                 </div>
@@ -247,33 +195,33 @@
                     <nav class="navbar navbar-expand-lg bg-contact navbar-dark">
                         <div class="container">
 
-                            <p href="https://www.jurgenbv.nl/" class="copyright-text-color text-decoration-none fs-3 fw-bold">Jurgen Visser - © 2022</p>
+                            <p href="https://www.jurgenbv.nl/" class="copyright-text-color text-decoration-none fs-4 fw-bold">Jurgen Visser - © <span id="copyright-year"></span></p>
                             <div class="d-flex justify-content-between" id="navbarSupportedContent2">
                                 <ul class="navbar-nav fs-4 gap-2">
                                     <li class="nav-item">
-                                        <a href="#section-home" class="nav-link" aria-current="page">Home</a>
+                                        <a href="#section-home" class="nav-link" aria-project="page">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#section-current" class="nav-link" aria-current="page">Huidige projecten</a>
+                                        <a href="#section-project" class="nav-link" aria-project="page">Projecten</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#section-languages" class="nav-link" aria-current="page">Talen en ervaring</a>
+                                        <a href="#section-languages" class="nav-link" aria-project="page">Talen</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#section-contact" class="nav-link active" aria-current="page">Contact me</a>
+                                        <a href="#section-contact" class="nav-link" aria-project="page">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                             <div>
                                 <ul class="navbar-nav fs-4 gap-2">
                                     <li class="nav-item">
-                                        <a class="nav-link text-decoration-none disabled" href="https://github.com/jurgenvisser">GitHub</a>
+                                        <a class="nav-link text-decoration-none" href="https://github.com/jurgenvisser">GitHub</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-decoration-none disabled" href="https://www.linkedin.com/in/jurgen-visser-62765115b/">Linkedin</a>
+                                        <a class="nav-link text-decoration-none" href="https://www.linkedin.com/in/jurgen-visser-62765115b/">Linkedin</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-decoration-none disabled" href="mailto:jurgenbv@gmail.com">E-mail</a>
+                                        <a class="nav-link text-decoration-none" href="mailto:jurgenbv@gmail.com">E-mail</a>
                                     </li>
                                 </ul>
                             </div>

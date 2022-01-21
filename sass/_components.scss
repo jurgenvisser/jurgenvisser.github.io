@@ -1,24 +1,25 @@
-#github {background-color: #ED6A5E;}
-#github:hover {background-color: #CE5B51;}
-#linkedin {background-color: #F3BE59;}
-#linkedin:hover {background-color: #D6A74E;}
-#mailto {background-color: #61C454;}
-#mailto:hover {background-color: #4FA044;}
-
-// TODO: blendmode darken regelen voor socials
-// ? is dit misschien een idee?
-// .github {
-//     background-color: #ED6A5E;
-//     :hover {
-//         background-color: rgba(0, 0, 0, 0.5);
-//         background-blend-mode: screen;
-//     }
-// }
-// ? ----------------------
-
-.btn-social {
-    height: $btn-socials-size;
-    width: $btn-socials-size;
+#github {
+    background-image: url("../img/github-white.svg");
+    background-repeat: no-repeat;
+    :hover {
+        // background-image: url("../img/github-black.svg");
+        // background-color: rgba(0, 0, 0, 0.5);
+        // background-blend-mode: screen;
+    }
+}
+#linkedin {
+    background-image: url("../img/linkedin-white.svg");
+    background-repeat: no-repeat;
+    :hover {
+        background-image: url("../img/linkedin-black.svg");
+    }
+}
+#mailto {
+    background-image: url("../img/mail-white.svg");
+    background-repeat: no-repeat;
+    :hover {
+        background-image: url("../img/mail-black.svg");
+    }
 }
 
 .title-text {

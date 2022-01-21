@@ -4,11 +4,14 @@
 // $dark-color: #000000;
 
 $primary-text-color: #fff;
+$primary-text-color-dimmed: rgba(255, 255, 255, 0.5);
 $secundairy-text-color: #073358;
-$copyright-text-color: #8080802a;
+$copyright-text-color: #ffffff49;
 
-$hero-overlay: rgba(243, 168, 111, 0.5);
-$navbar-color: rgba(7, 51, 88, 0.5);
+// $hero-overlay: rgba(243, 168, 111, 0.5);
+$hero-overlay: rgba(0, 0, 0, 0.5);
+// $navbar-color: rgba(7, 51, 88, 0.5);
+$navbar-color: #073358; // ? beter voor consistentie
 
 $body-background-color: #F2FEFF;
 $background-color: #073358;
@@ -22,4 +25,5 @@ $hover-orange: #f26e23;
 $btn-socials-size: 32px;
 
 $roboto: 'Roboto', sans-serif;
+$lexend: 'Lexend', sans-serif;
 $bebas-neue: 'Bebas Neue', cursive;
