@@ -15,7 +15,7 @@ body {background-color: $body-background-color;}
     font-family: $bebas-neue;
 }
 
-::placeholder {
+.form-control::placeholder {
     color: $primary-text-color-dimmed;
 }
 
@@ -47,12 +47,8 @@ html.sr .load-hidden {
     width: auto;
 }
 
-
-// .form-box {
-   
-//     label {
-//         color: #fff;
-//         margin: 10px 0;
-//         font-weight: bold;
-//     }
-// }
+@media only screen and (max-width: $screen-sm) {
+    #socials-navbar {
+        flex-direction: column;
+    }
+}

@@ -149,11 +149,11 @@ table {
 }
 
 .bg-primary-blue {
-  background-color: #43afdb;
+  background-color: #43afdb !important;
 }
 
 .bg-hover-blue {
-  background-color: #3285a7;
+  background-color: #3285a7 !important;
 }
 
 .spacer-bottom {
@@ -192,19 +192,19 @@ body {
   font-family: "Bebas Neue", cursive;
 }
 
-::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-:-ms-input-placeholder {
+.form-control:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-::-ms-input-placeholder {
+.form-control::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-::placeholder {
+.form-control::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -239,5 +239,14 @@ html.sr .load-hidden {
           justify-content: space-between;
   padding: 1rem;
   width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #socials-navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */

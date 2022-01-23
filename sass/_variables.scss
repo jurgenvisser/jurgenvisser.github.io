@@ -3,6 +3,7 @@
 // $light-color: #ffffff;
 // $dark-color: #000000;
 
+// @ ---------- COLORS ---------- @ //
 $primary-text-color: #fff;
 $primary-text-color-dimmed: rgba(255, 255, 255, 0.5);
 $secundairy-text-color: #073358;
@@ -22,8 +23,15 @@ $primary-orange: #f3a86f;
 $secundairy-orange: #F19F6B;
 $hover-orange: #f26e23;
 
-$btn-socials-size: 32px;
-
+// @ ---------- FONTS ---------- @ //
 $roboto: 'Roboto', sans-serif;
 $lexend: 'Lexend', sans-serif;
 $bebas-neue: 'Bebas Neue', cursive;
+
+// @ ---------- SCREEN SIZES ---------- @ //
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-xl: 1200px;
+
+// @ ---------- OTHER ---------- @ //
+$btn-socials-size: 32px;

@@ -1,3 +1,8 @@
+<?php
+
+    require('main.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en" class="sr">
 <head>
@@ -5,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal" defer>ScrollReveal({ reset: true });</script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="js/main.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/main.css">
@@ -19,53 +24,40 @@
                 <header>
                     <nav class="navbar navbar-expand-lg navbar-dark">
                         <div class="container">
-                            <a href="https://www.jurgenbv.nl/" class="reveal-navbar navbar-brand fs-3 py-0 fw-bold pe-5">jurgenbv.nl</a>
+                            <a href="https://www.jurgenbv.nl/" class="reveal-interval-40 navbar-brand fs-3 py-0 fw-bold pe-5">jurgenbv.nl</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                                <ul class="navbar-nav fs-5 gap-2">
-                                    <li class="nav-item">
-                                        <a href="#section-home" class="reveal-navbar nav-link active" aria-project="page">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#section-project" class="reveal-navbar nav-link" aria-project="page">Projecten</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#section-languages" class="reveal-navbar nav-link" aria-project="page">Talen</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#section-contact" class="reveal-navbar nav-link" aria-project="page">Contact</a>
-                                    </li>
-                                    <!-- ? Misschien socials in een dropdown? Not sure yet... -->
-                                    <!-- <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                         Socials
-                                        </a>
-                                        <ul class="dropdown-menu navbar-light bg-dark" aria-labelledby="navbarDropdown">
-                                            <li>
-                                                <a class="dropdown-item text-white" href="https://github.com/jurgenvisser">GitHub</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item text-white" href="https://www.linkedin.com/in/jurgen-visser-62765115b/">Linkedin</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item text-white" href="mailto:jurgenbv@gmail.com">E-mail</a>
-                                            </li>
-                                        </ul>
-                                    </li> -->
-                                </ul>
-                                <ul class="d-flex gap-4 justify-content-end">
-                                    <li>
-                                        <a href="https://github.com/jurgenvisser" class="reveal-navbar p-3 d-flex" id="github"></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/jurgen-visser-62765115b/" class="reveal-navbar p-3 d-flex" id="linkedin"></a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:jurgenbv@gmail.com" class="reveal-navbar p-3 d-flex" id="mailto"></a>
-                                    </li>
-                                </ul>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <ul class="navbar-nav fs-5 gap-2">
+                                        <li class="nav-item">
+                                            <a href="#section-home" class="nav-link reveal-interval-40 active" aria-project="page">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#section-project" class="nav-link reveal-interval-40" aria-project="page">Projects</a> <!-- ? misschien veranderen naar "Work"? -->
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#section-languages" class="nav-link reveal-interval-40" aria-project="page">Skills</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#section-contact" class="nav-link reveal-interval-40" aria-project="page">Contact</a>
+                                        </li>
+                                    </ul>
+                                    <ul id="socials-navbar" class="d-flex gap-4 ps-5">
+                                        <li class="nav-item">
+                                            <a href="https://github.com/jurgenvisser" class="reveal-interval-40 p-3 d-flex" id="github"></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="https://www.linkedin.com/in/jurgen-visser-62765115b/" class="reveal-interval-40 p-3 d-flex" id="linkedin"></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="mailto:jurgenbv@gmail.com" class="reveal-interval-40 p-3 d-flex" id="mailto"></a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -74,17 +66,17 @@
         
             <section class="d-flex flex-1 align-items-center text-color-primary">
                 <div class="container">
-                    <h1 class="ScrollReveal title-text col-md-10 fs-1">
-                        HOI, IK BEN <span class="blue">JURGEN</span>! <br />
-                        IK BEN EEN <span class="orange">FULL-STACK</span> WEB-DEVELOPER<span class="blue">.</span> <br />
-                        OP DEZE WEBSITE VIND JE MIJN WERK<span class="orange">.</span>
+                    <h1 class="title-text text-uppercase fs-1">
+                        <span class="typewrite" data-period="2000" data-type='[ "Hello", "Hallo", "こんにちは" ]'></span><span class="orange">,</span>  <br/>
+                        My name is <span class="blue">Jurgen Visser</span>! <br />
+                        I am a <span class="orange">Full-Stack</span> Web-Developer<span class="blue">.</span> <br />
                     </h1>
                     <!-- ? TODO: een foto toevoegen van mijzelf? -->
-                    <p class="ScrollReveal col-lg-6 col-md-8 fs-4 py-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    <p class="fs-4 py-4">
+                        You can find my work and expreriences on this website. <?= $message =>
                     </p>
-                    <div class="ScrollReveal my-4">
-                        <a class="btn-blue text-decoration-none rounded-pill px-4 py-2 fs-4" href="#section-project">LEES MEER</a>
+                    <div class="my-4">
+                        <a class="btn-blue text-decoration-none rounded-pill px-4 py-2 fs-4" href="#section-project">Read more...</a>
                     </div>
                 </div>
             </section>
@@ -92,14 +84,14 @@
         </div>
 
         <main>
-            <section class="project spacer-bottom" id="section-project"> <!-- ? .ScrollReveal op alle sections? -->
+            <section class="project spacer-bottom" id="section-project"> <!-- ? .reveal op alle sections? -->
                 <div class="container">
-                    <h1 class="ScrollReveal fs-1 fw-bold title-color-custom text-center p-5 text-uppercase">Projecten</h1>
+                    <h1 class="reveal fs-1 fw-bold title-color-custom text-center p-5 text-uppercase">Projects</h1>
                     <div class="row"> <!-- ! Zorgen voor responsiveness als er meer cards worden toegevoegd  -->
                         <div class="col-6">
-                            <div class="card">
+                            <div class="reveal card">
                                 <div class="card-body p-0">
-                                    <h5 class="card-title title-bg-custom text-white fs-4 fw-bold py-2 px-3 rounded text-uppercase">Huidig PHP project</h5>
+                                    <h5 class="card-title title-bg-custom text-white fs-4 fw-bold py-2 px-3 rounded text-uppercase">Current PHP project</h5>
                                     <div class="m-3">
                                         <p class="card-text">
                                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <br />
@@ -112,9 +104,9 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="card">
+                            <div class="reveal card">
                                 <div class="card-body p-0">
-                                    <h5 class="card-title title-bg-custom text-white fs-4 fw-bold py-2 px-3 rounded text-uppercase">Huidig HTML/CSS project</h5>
+                                    <h5 class="card-title title-bg-custom text-white fs-4 fw-bold py-2 px-3 rounded text-uppercase">Current HTML/CSS project</h5>
                                     <div class="m-3">
                                         <p class="card-text">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. <br />
@@ -135,16 +127,16 @@
             <section class="languages spacer-bottom" id="section-languages">
                 <div class="container">
                     <hr class="m-0">
-                    <h1 class="ScrollReveal fs-2 fw-bold title-color-custom text-center pt-5 pb-3 text-uppercase">Skills</h1>
-                    <h3 class="ScrollReveal fs-5 text-center pb-3">+ basiskennis | ++ redelijk kennisniveau | +++ goed mee bekend</h3>
+                    <h1 class="reveal fs-2 fw-bold title-color-custom text-center pt-5 pb-3 text-uppercase">Skills</h1>
+                    <h3 class="reveal fs-5 text-center pb-3">+ basiskennis | ++ redelijk kennisniveau | +++ goed mee bekend</h3>
 
                     <div class="container d-flex justify-content-center p-0 mb-3">
                         <div class="languages-grid-container col-10 d-grid gap-3 text-center"> <!-- TODO: maak hier gebruik van een array en maak gebruik van de join functie -->
-                            <div class="languages-grid-item">HTML<span>+++</span></div>
-                            <div class="languages-grid-item">CSS<span>++</span></div>
-                            <div class="languages-grid-item">PHP<span>+</span></div>
-                            <div class="languages-grid-item">JavaScript<span>+</span></div>
-                            <div class="languages-grid-item">Bootstrap 5<span>++</span></div>
+                            <div class="languages-grid-item reveal-interval-40">HTML<span>+++</span></div>
+                            <div class="languages-grid-item reveal-interval-40">CSS<span>++</span></div>
+                            <div class="languages-grid-item reveal-interval-40">PHP<span>+</span></div>
+                            <div class="languages-grid-item reveal-interval-40">JavaScript<span>+</span></div>
+                            <div class="languages-grid-item reveal-interval-40">Bootstrap 5<span>++</span></div>
                         </div>
                     </div>
                 </div>
@@ -153,40 +145,41 @@
             <div class="d-flex flex-column">
                 <section class="contact spacer-bottom bg-contact" id="section-contact">
                     <div class="container">
-                        <h1 class="ScrollReveal fs-2 fw-bold text-white text-center p-5 text-uppercase">Contact</h1>
+                        <h1 class="reveal fs-2 fw-bold text-white text-center p-5 text-uppercase">Contact</h1>
 
-                        <div class="container text-white col-lg-8 col-md-10 p-0">
-                            <form action="mailto:jurgenbv@gmail.com"> <!-- ! later email van webserver toevoegen-->
+                        <div class="container d-flex justify-content-center text-white">
+                            <form action="mailto:jurgenbv@gmail.com" class="row"> <!-- ! later email van webserver toevoegen-->
 
-                                <div class="ScrollReveal row fs-5 fw-bold text-uppercase mb-2">
-                                    <div class="col bg-hover-blue p-2 px-3 me-1 rounded-top-start">
-                                        <label for="name_old">Naam:</label>
-                                        <input type="text" name="name_old" id="name_old" placeholder="John Appleseed" class="ps-2 text-white w-75 bg-hover-blue border-none">
-                                    </div>
-                                    <div class="col bg-hover-blue p-2 px-3 ms-1 rounded-top-end">
-                                        <label for="email_old">E-mail:</label>
-                                        <input type="email" name="email_old" id="email_old" placeholder="j.appleseed@gmail.com" class="ps-2 text-white w-75 bg-hover-blue border-none">
+                                <div class="col-sm-6">
+                                    <div class="input-group mb-2">
+                                        <span class="input-group-text bg-hover-blue text-white border-0 p-2 ps-3 fw-bold text-uppercase" id="basic-addon3">Name:</span>
+                                        <input type="text" class="form-control bg-hover-blue text-white border-0" placeholder="John Appleseed">
+                                      </div>
+                                  </div>
+                      
+                                  <div class="col-sm-6">
+                                    <div class="input-group mb-2">
+                                        <span class="input-group-text bg-hover-blue text-white border-0 px-2 ps-3 fw-bold text-uppercase">E-mail:</span>
+                                        <input type="text" class="form-control bg-hover-blue text-white border-0" placeholder="j.appleseed@gmail.com">
+                                      </div>
+                                  </div>
+
+                                <div class="col fs-5">
+                                    <div class="form-group">
+                                        <!-- <div class="input-group-text border-0 text-white bg-primary-blue pt-2 px-3 rounded-top"><label for="message" class="fw-bold text-uppercase">Message:</label></div> -->
+                                        <textarea class="form-control bg-primary-blue border-none text-white py-2 mb-2" name="message" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
                                     </div>
                                 </div>
 
-                                <div class="ScrollReveal row fs-5 fw-bold text-uppercase mb-3 bg-primary-blue p-3 rounded-bottom">
-                                    <div class="col-12 mb-3 p-0">
-                                        <label for="message" class="">Bericht:</label>
-                                    </div>
-                                    <div class="col-12 p-0">
-                                        <textarea class="bg-primary-blue border-none text-white w-100 p-0" name="message" id="message" cols="30" rows="10" placeholder="Typ hier uw bericht..."></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="ScrollReveal row d-flex justify-content-end">
-                                    <!-- ? label voor enter -->
-                                    <button type="submit" class="w-auto bg-sec-orange text-white text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold border-sec-orange">Verzenden</button>
+                                <div class="reveal row d-flex justify-content-end">
+                                    <button id="send" type="submit" class="w-auto bg-sec-orange text-white text-decoration-none rounded-pill px-4 py-2 fs-4 fw-bold border-sec-orange">Send</button>
                                 </div>
 
                             </form>
                         </div>
 
                     </div>
+                    
                     <!-- TODO: Fixed position button to top of page -->
                         <!-- ? misschien gebruik maken van ::before -->
                 </section>
@@ -195,32 +188,32 @@
                     <nav class="navbar navbar-expand-lg bg-contact navbar-dark">
                         <div class="container">
 
-                            <p href="https://www.jurgenbv.nl/" class="copyright-text-color text-decoration-none fs-4 fw-bold">Jurgen Visser - © <span id="copyright-year"></span></p>
+                            <p href="https://www.jurgenbv.nl/" class="reveal-interval-20 reveal-reset-true copyright-text-color text-decoration-none fs-4 fw-bold">Jurgen Visser - © <span id="copyright-year"></span></p>
                             <div class="d-flex justify-content-between" id="navbarSupportedContent2">
                                 <ul class="navbar-nav fs-4 gap-2">
-                                    <li class="nav-item">
+                                    <li class="reveal-interval-20 reveal-reset-true nav-item">
                                         <a href="#section-home" class="nav-link" aria-project="page">Home</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="reveal-interval-20 reveal-reset-true nav-item">
                                         <a href="#section-project" class="nav-link" aria-project="page">Projecten</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="reveal-interval-20 reveal-reset-true nav-item">
                                         <a href="#section-languages" class="nav-link" aria-project="page">Talen</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="reveal-interval-20 reveal-reset-true nav-item">
                                         <a href="#section-contact" class="nav-link" aria-project="page">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                             <div>
                                 <ul class="navbar-nav fs-4 gap-2">
-                                    <li class="nav-item">
+                                    <li class="reveal-interval-20 reveal-reset-true nav-item">
                                         <a class="nav-link text-decoration-none" href="https://github.com/jurgenvisser">GitHub</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="reveal-interval-20 reveal-reset-true nav-item">
                                         <a class="nav-link text-decoration-none" href="https://www.linkedin.com/in/jurgen-visser-62765115b/">Linkedin</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="reveal-interval-20 reveal-reset-true nav-item">
                                         <a class="nav-link text-decoration-none" href="mailto:jurgenbv@gmail.com">E-mail</a>
                                     </li>
                                 </ul>

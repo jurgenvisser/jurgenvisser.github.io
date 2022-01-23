@@ -1,11 +1,6 @@
 #github {
     background-image: url("../img/github-white.svg");
     background-repeat: no-repeat;
-    :hover {
-        // background-image: url("../img/github-black.svg");
-        // background-color: rgba(0, 0, 0, 0.5);
-        // background-blend-mode: screen;
-    }
 }
 #linkedin {
     background-image: url("../img/linkedin-white.svg");
@@ -49,8 +44,8 @@
 .vh-50 {height: 50vh;}
 .bg-sec-orange {background-color: $secundairy-orange;}
 .bg-contact {background-color: $background-color;}
-.bg-primary-blue {background-color: $primary-blue;}
-.bg-hover-blue {background-color: $hover-blue;}
+.bg-primary-blue {background-color: $primary-blue !important;}
+.bg-hover-blue {background-color: $hover-blue !important;}
 .spacer-bottom {padding-bottom: 128px;}
 .fs-custom-title {font-size: 56px;}
 .rounded-top-start {border-top-left-radius: 5px;}
